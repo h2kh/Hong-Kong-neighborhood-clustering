@@ -52,6 +52,27 @@ After running the K-means algorithm once more using K=10, we assign cluster labe
 
 _Results_:
 
+We will now plot markers for all the neighborhoods on a map of Hong Kong with each marker colored according to its assigned cluster. Clicking on a marker will show you the neighborhood's name and cluster label.
+
+![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/map2.JPG)
+
+We can now examine any cluster that interests us and determine the discriminating venue categories that distinguish that cluster. Based on the defining categories, you can come up with a general profile of the cluster. For example, neighborhoods with cluster label 0 have a lot of Chinese restaurants. In the absence of data on neighborhood demographics, one can deduce that these neighborhoods are more popular among Hong Kong locals. Similar analysis can be done for the other clusters as well.
+
+![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/Capture7.JPG)
+
+Now that we have characterized the neighborhoods, we can use our data in many different ways.
+
+One application can be to use our data to identify most similar neighborhoods. For example, you can select your neigborhood in the following code cells and we will use our data to identify the most similar neighborhood based on Euclidean distance. Such information can be useful if you want to move to another neighborhood that is similar to the one in which you reside now.
+
+![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/gif1.gif)
+
+We can also utilize our clustering model to suggest similar neighborhoods which have the cheapest average rent per square foot. Since we have two constraints (neighborhood similarity and rental cost), we will have to optimize for them one by one. The other option would be to assign weights signifying the relative importance of these two constraints but we decide not to pursue that idea because being asked to specify weights would unnecessarily complicate matters for our intended users. Upon selection of the user's current neighborhood, our code will first identify the neighborhood's cluster and then, from within that cluster, pick out the neighborhood with the cheapest rent.
+
+![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/gif2.gif)
+
+
+_Discussion_:
+
 
 
 
