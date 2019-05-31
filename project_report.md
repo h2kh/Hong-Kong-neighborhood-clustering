@@ -73,17 +73,17 @@ We can also utilize our clustering model to suggest similar neighborhoods which 
 
 _Discussion_:
 
+In the table above, we can see that clusters 2 and 3 are the most common. Some clusters have only one neighborhood which could indicate overfitting. Real-world knowledge of the dataset can assist in such a situation.
+
+Based on my experience from living in Hong Kong for more than 6 years, I believe the clusters which include only one neighborhood are justified because of their unique locations and surroundings. Skeptical readers might wish to find on the map these unique neighborhoods to assuage any doubts.
+
+![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/Capture8.JPG)
+
+Our analysis can be improved over time as the quality and quantity of data increases. Data from Google Maps is a promising option to complement the Foursquare data that we have now. Also, dynamic updating of our data on average rent prices from an online portal would be a more robust option than the static dataset that we are using now.
+
+We used the 'elbow' method to determine the optimal number of clusters. Alternate methods like silhouette analysis can be explored in the future.
 
 
+_Conclusion_:
 
-
-
-
-
-
-
-
-
-
-
-
+We have successfully created two useful tools that can aid locals and foreigners alike in finding good but cheap neighborhoods. More work is still needed in order to further refine our analysis with better data. 
