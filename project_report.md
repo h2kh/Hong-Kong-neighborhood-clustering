@@ -26,12 +26,43 @@ The data returned by Foursquare, after cleaning and processing, looks like this 
 
 ![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/Capture1.JPG)
 
+
+_Methodology_:
+
+For exploratory data analysis, we start by analyzing the variable rent per square foot. The histogram below shows that the distribution is skewed to the right with the median falling in the HKD40 to HKD50 range.
+
+![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/Capture3.JPG)
+
 In the histogram below, we can see that the Foursquare data returned less than 10 venues for around 40 neighborhoods. While this probably indicates that these neighborhoods are secluded and residential, it could also suggest that more data is needed. This can be focused on in future iterations of this project. Also, there are 5 neighborhoods for which no results (i.e. venues) were returned from FourSquare. These neighborhoods have accordingly not been included in the following analysis.
 
 ![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/Capture2.JPG)
 
+Then, we start to transform our data to get it ready for the K-means clustering algorithm. We create indicator variables for all of our categories, group the rows by neighborhood and then standardize them to get, for every neighborhood, the proportion of venues in each category. These steps help us get the data in a form that's easier to understand and enable us to develop a rough profile of each neighborhood.
 
-_Methodology_:
+![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/Capture5.JPG)
+
+We have successfully characterized each neighborhood by using the data from Foursquare. This means we can get to the most interesting part (at least for me) of the project, data modelling.
+
+First, we're going to run the K-means clustering algorithm for a range of cluster values in order to estimate the optimal number of clusters. In order to choose the optimal number of clusters, we can use a basic heuristic called the 'elbow method' which suggests that we should pick that number of clusters beyond which there is minimal improvement (i.e. decrease) in the cost function (the average squared distance from each point to cluster centroid). This would appear as a sudden decrease in the slope of the scatter plot above (i.e. an elbow in the plot). Based on the scatter plot below, we will opt for 10 clusters for the rest of this project.
+
+![alt text](https://github.com/h2kh/Coursera_Capstone/blob/master/Capture6.JPG)
+
+After running the K-means algorithm once more using K=10, we assign cluster labels 0 to 9 to 122 neighborhoods. We dropped five neighborhoods earlier because Foursquare didn't return any data on venues in those neighborhoods. These neighborhoods are assigned with the label 10 as a placeholder until better/more data becomes available.
+
+
+_Results_:
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
