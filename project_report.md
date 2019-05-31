@@ -2,4 +2,4 @@
 ### *Find your next apartment in similar yet cheaper locations*
 ---------
 
-Introduction:
+1. _Introduction_:
