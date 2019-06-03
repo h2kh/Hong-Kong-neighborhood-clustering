@@ -1,8 +1,0 @@
-pandas
-numpy
-matplotlib
-folium
-geopy
-sklearn
-geopy
-requests
