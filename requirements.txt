@@ -2,9 +2,8 @@ pandas
 numpy
 matplotlib
 folium
-geopy.geocoders
-sklearn.clusters
-geopy.exc
+geopy
+sklearn
+geopy
 json
-pandas.io.json
 requests
