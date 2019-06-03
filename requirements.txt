@@ -1,7 +1,6 @@
 pandas
 numpy
-matplotlib.colors
-matplotlib.pyplot
+matplotlib
 folium
 geopy.geocoders
 sklearn.clusters
