@@ -5,5 +5,4 @@ folium
 geopy
 sklearn
 geopy
-json
 requests
