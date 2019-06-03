@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib.cm
+matplotlib.colors
+matplotlib.pyplot
+folium
+geopy.geocoders
+sklearn.clusters
+geopy.exc
+json
+pandas.io.json
+requests
